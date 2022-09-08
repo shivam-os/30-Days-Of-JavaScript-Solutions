@@ -66,3 +66,56 @@ if (itCompanies.includes(myCompany)) {
 
 
 //14. Filter out companies which have more than one 'o' without the filter method
+let companiesWithO = []
+for (let i of itCompanies) {
+  if (i.match(/o+/i)) {
+    companiesWithO.push(i);
+  }
+}
+console.log(`Companies with more than one 'o': ${companiesWithO}`);
+
+
+//15. Sort the array using sort() method
+itCompanies.sort();
+console.log(`Sorted array of companies: ${itCompanies}`);
+
+
+//16. Reverse the array using reverse() method
+itCompanies.reverse();
+console.log(`Array of companies in reverse order: ${itCompanies}`);
+
+
+//17. Slice out the first 3 companies from the array
+let first3companies = itCompanies.slice(0, 3);
+console.log(`First 3 companies: ${first3companies}`);
+
+
+//18. Slice out the last 3 companies from the array
+let last3companies = itCompanies.slice(itCompanies.length - 3, itCompanies.length);
+console.log(`Last 3 companies: ${last3companies}`);
+
+
+///19. Slice out the middle IT company or companies from the array
+let middlePos = (itCompanies.length) / 2;
+let middleCompany = itCompanies.slice(middlePos, middlePos + 1);
+console.log(`Middle company: ${middleCompany}`);
+
+
+//20. Remove the first IT company from the array
+itCompanies.shift();
+console.log(`Array after removing first company: ${itCompanies}`);
+
+
+//21. Remove the middle IT company or companies from the array
+itCompanies.splice(middlePos, 1);
+console.log(`Array after removing middle company: ${itCompanies}`);
+
+
+//22. Remove the last IT company from the array
+itCompanies.pop();
+console.log(`Array after removing last company: ${itCompanies}`);
+
+
+//23. Remove all IT companies
+itCompanies.splice(0, itCompanies.length);
+console.log(`Array after removing every company: ${itCompanies}`);
