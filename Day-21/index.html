@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Level 1 & Level 2</title>
+</head>
+<body>
+  <p>30DaysOfPython Challenge Done</p>
+  <p>30DaysOfJavaScript Challenge Ongoing</p>
+  <p>30DaysOfReact Challenge Coming</p>
+  <p>30DaysOfFullStack Challenge Coming</p>
+  <script>
+    let paragraphs = document.querySelectorAll("p");
+
+    //4. Loop through the nodeList and get the text content of each paragraph
+    paragraphs.forEach((element) => console.log(element.textContent));
+
+    //5. Set a text content to paragraph the fourth paragraph,Fourth Paragraph
+    paragraphs[3].textContent = "Fourth Paragraph";
+    
+    //6. Set id and class attribute for all the paragraphs using different attribute setting methods
+    paragraphs.forEach((element, i) => {
+      element.setAttribute("class", `myclass-${i}`)
+      element.id = `id-${i}`;
+    });
+    
+    //Level-2
+    //2. Change stye of each paragraph using JavaScript(eg. color, background, border, font-size, font-family)
+    paragraphs.forEach((element, i) => {
+      if ((i + 1) % 2 == 0){
+        element.style.backgroundColor = "red";
+      }
+      
+      if ((i + 1) % 2 != 0){
+        element.style.backgroundColor = "green";
+      }
+    })
+
+    //3. Set text content, id and class to each paragraph
+    paragraphs.forEach((element, i) => {
+      element.classList.add(`yourClass-${i}`);
+      element.setAttribute("id", `yourID-${i}`);
+      element.textContent = `This is paragraph at ${i} index.`;
+    })
+  </script>
+</body>
+</html>
