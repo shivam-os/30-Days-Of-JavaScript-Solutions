@@ -1,0 +1,28 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Verdana", sans-serif;
+}
+
+body h1, body p, body h3{
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.country {
+  height: 10rem;
+  width: 10rem;
+  text-align: center;
+  margin: 1rem;
+  border: 2px solid black;
+  vertical-align: middle;
+  padding: 4rem 1rem 1rem 1rem;
+}
