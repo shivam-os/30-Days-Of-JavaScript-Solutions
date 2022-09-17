@@ -1,0 +1,39 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  margin: 10% auto;
+  width: 40%;
+  height: 50%;
+  text-align: center;
+  text-shadow: 1px 1px #424242;
+}
+
+.key--info {
+  color: #424242;
+  font-size: 2.5rem;
+  font-weight: 600;
+  border: 2px solid #424242;
+  padding: 1rem;
+  box-shadow: 5px 5px;
+}
+
+.key--code {
+  height: 10rem;
+  width: 10rem;
+  color: #5abb79;
+  line-height: 10rem;
+  font-size: 5rem;
+  margin: 5rem auto;
+  border: 2px solid #424242;
+  box-shadow: 5px 5px #424242;
+}
+
+.key--entered {
+  color: #5abb79;
+}
