@@ -1,0 +1,64 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  color: #5bbc7a;
+}
+
+h3 {
+  margin-top: -1rem;
+}
+
+p {
+  margin-top: -1rem;
+}
+
+.generate--box {
+  margin: 1rem 0 4rem 0;
+}
+
+input {
+  border:2px solid #5bbc7a;
+  width: 20rem;
+  height: 2.5rem;
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+
+button {
+  height: 2.5rem;
+  padding: 0 1rem 0 1rem;
+  font-size: 1rem;
+  margin-left: 2rem;
+  border-radius: 0;
+  border: 2px solid #5bbc7a;
+  background-color: #5bbc7a;
+  color: #FFFFFF;
+}
+
+/* ------ Numbers container ------ */
+.container {
+  max-width: 40%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.container--box {
+  height: 4rem;
+  width: 4rem;
+  color: #FFFFFF;
+  font-weight: 700;
+  text-align: center;
+  font-size: 1.5em;
+  margin: 0.2rem;
+  line-height: 4rem;
+}
